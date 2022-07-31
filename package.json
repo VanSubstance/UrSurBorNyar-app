@@ -3,7 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "d-d": "react-native run-android --variant=developdebug",
+    "s-d": "react-native run-android --variant=stagingdebug",
+    "p-d": "react-native run-android --variant=productiondebug",
+    "d-r": "react-native run-android --variant=developrelease",
+    "s-r": "react-native run-android --variant=stagingrelease",
+    "p-r": "react-native run-android --variant=productionrelease",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
@@ -14,7 +19,9 @@
     "@types/react-native": "^0.69.4",
     "react": "18.0.0",
     "react-native": "0.69.3",
+    "react-native-config": "^1.4.6",
     "react-native-typescript-transformer": "^1.2.13",
+    "react-native-webview": "^11.23.0",
     "typescript": "^4.7.4"
   },
   "devDependencies": {
